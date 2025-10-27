@@ -7,8 +7,8 @@
     <ProjectGuid>{1EA03423-B6AC-4A84-A883-A4050BC1B710}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>internal_timesheet_plugin</RootNamespace>
-    <AssemblyName>internal-timesheet-plugin</AssemblyName>
+    <RootNamespace>GarageGroup.Internal.Timesheet.Plugin</RootNamespace>
+    <AssemblyName>GarageGroup.Internal.Timesheet.Plugin</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -120,6 +120,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataCollectionExtensions.cs" />
+    <Compile Include="TimesheetValidationPlugin.cs" />
     <Compile Include="LanguagePlugin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
