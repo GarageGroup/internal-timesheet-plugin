@@ -21,8 +21,8 @@ jobs:
         nuget-version: 'latest'
 
     - name: Restore NuGet packages
-      run: nuget restore internal-timesheet-plugin.csproj -PackagesDirectory packages
+      run: nuget restore GarageGroup.Internal.Timesheet.Plugin.csproj -PackagesDirectory packages
 
     - name: Build the plugin
       run: |
-        msbuild /t:Rebuild /p:Configuration=Release internal-timesheet-plugin.csproj
+        msbuild /t:Rebuild /p:Configuration=Release GarageGroup.Internal.Timesheet.Plugin.csproj
